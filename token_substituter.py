@@ -32,7 +32,6 @@ from bpy.app.handlers import persistent
 
 
 import os
-import pwd
 import time
 import platform
 
@@ -42,7 +41,6 @@ def replace_tokens ( string ):
         "$camera": bpy.context.scene.camera.name,
         "$res": str(bpy.context.scene.render.resolution_x) + "x" + str(bpy.context.scene.render.resolution_y),
         "$CVCOMPUTER": platform.uname().node,
-        "$CVUSERNAME": pwd.getpwuid(os.getuid()).pw_name,
         "$CVRENDERER": bpy.context.scene.render.engine,
         "$CVHEIGHT": str(bpy.context.scene.render.resolution_y) + "p",
 
