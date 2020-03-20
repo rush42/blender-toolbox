@@ -86,7 +86,7 @@ def save_incremental( self, context ):
     return 0     
 
 
-class Save_Incremental (bpy.types.Operator):
+class Save_Incremental( bpy.types.Operator ):
     """Save the current file with increased version number"""
     bl_idname = "file.save_incremental"
     bl_label = "Save Incremental"
@@ -103,12 +103,12 @@ def menu_draw(self, context):
     self.layout.operator( "file.save_incremental" )
 
 def register():
-    register_class( Save_Incremental )
-    bpy.types.TOPBAR_MT_file.prepend(menu_draw)
+    bpy.utils.register_class( Save_Incremental )
+    bpy.types.TOPBAR_MT_file.prepend( menu_draw )
 
 def unregister():
-    bpy.types.TOPBAR_MT_file.remove(menu_draw)
-    return
+    bpy.types.TOPBAR_MT_file.remove( menu_draw )
+    bpy.utils.unregister_class( Save_Incremental )
 
 
 if __name__ == "__main__":
