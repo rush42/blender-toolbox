@@ -19,7 +19,7 @@ bl_info = {
     "name": "Token Substituter",
     "author": "Laurenz Rasche",
     "version": (1, 0, 0),
-    "blender": (2, 80, 0),
+    "blender": (2, 82, 0),
     "description": "Enables C4D like tokens for render/compositor paths",
     "warning": "",
     "wiki_url": "https://github.com/rush42",

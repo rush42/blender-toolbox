@@ -20,7 +20,7 @@ bl_info = {
     "name": "Save Incremental",
     "author": "Laurenz Rasche",
     "version": (1, 0, 0),
-    "blender": (2, 80, 0),
+    "blender": (2, 82, 0),
     "description": "Enables incremental saving for projects",
     "warning": "",
     "wiki_url": "https://github.com/rush42",
