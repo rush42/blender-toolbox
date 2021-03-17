@@ -21,5 +21,6 @@ Replaces the following tokens in paths used for compositing nodes and render out
 
 
 ## Save Incremental
-Adds an operator for incremental saving, where the project name gets increased every invocation.
 Extends the file menu with a button for incremental saving.
+After invoking Incremental saving the trailing number of the project file name gets increased.
+If there is no number at the end of the project file name "_001" gets concatenated.
